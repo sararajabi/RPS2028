@@ -18,7 +18,7 @@
     <title >Rock Paper Scissor</title>
   </head>
   <body class="body1">
-    <div class="text1 text-white text-center">Rock Paper Scissors</div>
+    <div class="text1 text-white text-center" id="txt1">Rock Paper Scissors</div>
 
     <div class="text2 text-white text-center">
       <span>You</span>
@@ -27,12 +27,22 @@
       <span class="Ai-score">0</span>
       <span>Ai</span>
     </div>
-    <div class="text3 text-white text-center">Your Turn !</div>
-    <div class="text3 text-white text-center">Your Turn !</div>
+    <div class="turn text-white text-center">Your Turn !</div>
+
     <div class="images d-flex justify-content-center">
       <img src="assets/images/paper 1.png" alt="paper">
       <img src="assets/images/two 1.png" alt="two">
       <img src="assets/images/rock 1.png" alt="rock">
+    </div>
+
+    <form class="radio-btn d-flex justify-content-center p-4">
+      <input type="radio" name="r" class="paper">
+      <input type="radio" name="r" class="two">
+      <input type="radio" name="r" class="rock">
+    </form>
+
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="submit text-white rounded-4">START</button>
     </div>
     <!-- scripts -->
     <script src="./script/main.js"></script>
