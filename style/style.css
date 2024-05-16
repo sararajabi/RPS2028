@@ -1,6 +1,29 @@
 :root {
+  --blue-gradient:#3B2A9F;
+  --secondary:#FA8305;
 }
 
 * {
   box-sizing: border-box;
+ 
 }
+.body1{
+  background-color:var(--blue-gradient);
+  font-family: "Poppins", sans-serif !important;
+}
+.text1{
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 36px;
+}
+.text2{
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 36px;
+}
+.text3{
+  margin-top: 36px;
+  font-weight: 700;
+  font-size: 36px;
+}
+ 
