@@ -1,4 +1,4 @@
-const result= document.getElementById('result');
+const result= document.getElementById('txt1');
 const restart= document.querySelector('.submit');
 restart.addEventListener('click',()=>{
 	result.innerText = 'DRAW';
@@ -47,7 +47,7 @@ const secondgame = ()=>{
 				result.style.color = "green";
                 return_report.textContent = 'Ai choosed two'
 				player_score++;
-				playerScore.textContent = user_score.toString();
+				playerScore.textContent = player_score.toString();
 			}
 		}
         else if (player == 'two') {
