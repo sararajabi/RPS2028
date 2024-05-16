@@ -1,4 +1,4 @@
-const result= document.getElementById('txt1');
+const result= document.getElementById('result');
 const restart= document.querySelector('.submit');
 restart.addEventListener('click',()=>{
 	result.innerText = 'DRAW';
@@ -32,23 +32,54 @@ const secondgame = ()=>{
 	const winner = (player, Ai) => {
 		const playerScore = document.querySelector('.player-score');
 		const AiScore = document.querySelector('.Ai-score');
-        const turn_report = document.querySelector('.turn');
+        const return_report = document.querySelector('.turn');
 
         if (player == 'rock') {
 			if (Ai == 'paper') {
 				result.innerText = 'You Lost!';
 				result.style.color = "red";
-                turn_report.textContent = 'Ai choosed paper'
+                return_report.textContent = 'Ai choosed paper'
 				Ai_score++;
 				AiScore.textContent = Ai_score.toString();
 
 			} else {
 				result.innerText = 'You Won!'
 				result.style.color = "green";
-                turn_report.textContent = 'Ai choosed two'
+                return_report.textContent = 'Ai choosed two'
 				player_score++;
 				playerScore.textContent = user_score.toString();
 			}
 		}
-}
+        else if (player == 'two') {
+			if (Ai == 'rock') {
+				result.innerText = 'You Lost!';
+				result.style.color = "red";
+                return_report.textContent = 'Ai choosed rock'
+				Ai_score++;
+				AiScore.textContent = Ai_score.toString();
+			} else {
+				result.innerText = 'You Won!';
+				result.style.color = "green";
+                return_report.textContent = 'Ai choosed paper'
+				player_score++;
+				playerScore.textContent = player_score.toString();
+			}
+		}
+        else if (player == 'paper') {
+			if (Ai == 'two') {
+				result.innerText = 'You Lost!';
+				result.style.color = "red";
+                return_report.textContent = 'Ai choosed two'
+				Ai_score++;
+				AiScore.textContent = Ai_score.toString();
+			} else {
+				result.innerText = 'You Won!';
+				result.style.color = "green";
+                return_report.textContent = 'Ai choosed rock'
+				player_score++;
+				playerScore.textContent = player_score.toString();
+			}
+		}
+    }
+    playgame();   
 }
