@@ -16,26 +16,57 @@
 </head>
 <body class="body1">
    
-    <div class="player text-white text-center " id="score">
-        <span>player 1 ---</span>
-        <span class="player1-score">0</span>
-        <span>:</span>
-        <span class="player2-score">0</span>
-        <span>--- player 2</span>
-      </div>
-      <div class="start text-white text-center" id="result">START</div>
-      <div class="box d-flex g-3 justify-content-center">
-        <div class="box1 rounded-4 d-flex justify-content-center align-items-center">
-            <img src="assets/images/paper 1.png" alt="paper">
-            <img src="assets/images/two 1.png" alt="two">
-            <img src="assets/images/rock 1.png" alt="rock">
-        </div>
-        <div class="box2 rounded-4 d-flex justify-content-center align-items-center">
-            <img src="assets/images/paper 1.png" alt="paper">
-            <img src="assets/images/two 1.png" alt="two">
-            <img src="assets/images/rock 1.png" alt="rock">
-        </div>
-      </div>
-      <script src="./script/phase2.js"></script>
+  <div class="info">
+    <p class="text-center text-white mt-5 pt-5 fw-bold" id="score"> Player1 --- 0 : 0 --- Player2 </p>
+    <p class="start text-center  text-white " id="Result"> START</p>
+  </div>
+  <div class="d-flex flex-row justify-content-center gap-4 mt-4" id="con">
+    <button type="button" class="btn1 btn btn-info  fw-bold btn-lg text-white" type="submit" id="3">3</button>
+    <button type="button" class="btn2 btn btn-info  fw-bold btn-lg text-white" type="submit" id="5">5</button>
+    <button type="button" class="btn3 btn btn-info fw-bold btn-lg text-white" type="submit" id="7">7</button>
+  </div>
+<div class="d-flex justify-content-center align-items-center pt-5 ms-5">
+    <div>
+        
+        <div class="box1 d-flex justify-content-center align-content-center mx-4 gap-2 text-white bg-pri50 rounded-5 p-3">
+            <div class="d-flex justify-content-center align-items-center flex-column rounded-4 p-3">
+              <img src="assets/images/paper 1.png" width="100px"/>
+              <h1>A</h1>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column rounded-4 p-3">
+              <img src="assets/images/two 1.png" width="100px"/>
+              <h1>S</h1>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column rounded-4 p-3">
+              <img src="assets/images/rock 1.png" width="100px"/>
+              <h1>D</h1>
+            </div>
+          </div>
+          <h3 class="d-flex justify-content-center ms-5 pt-2 text-white" >Player 1</h3>
+    </div>
+    <div>
+        
+        <div class="box2 d-flex justify-content-center align-content-center mx-4 gap-2 text-white bg-pri300 rounded-5 p-3">
+            <div class="d-flex justify-content-center align-items-center flex-column rounded-4 p-3">
+              <img src="assets/images/paper 1.png" width="100px"/>
+              <h2 class="mt-1 fw-bold">←</h2>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column rounded-4 p-3">
+              <img src="assets/images/two 1.png" width="100px"/>
+              <h2 class="mt-1 fw-bold">↑</h2>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column rounded-4 p-3">
+              <img src="assets/images/rock 1.png" width="100px"/>
+              <h2 class="mt-1 fw-bold">→</h2>
+            </div>
+          </div>       
+          <h3 class="d-flex justify-content-center ms-5 pt-2 text-white">Player 2</h3>
+          
+    </div>
+</div>   
+<div class="d-flex flex-column align-items-center justify-content-center mt-4">
+  <button type="button" class="btn btn-outline-light fw-bold btn-lg d-none" type="submit" id="player">NEW GAME</button>
+</div>
+<script src="./script/phase2.js"></script>
 </body>
 </html>
